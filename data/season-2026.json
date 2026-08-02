@@ -1,7 +1,4390 @@
 {
   "season": 2026,
-  "currentRound": 0,
-  "ladder": [],
-  "fixtures": [],
-  "updatedAt": "1970-01-01T00:00:00.000Z"
+  "currentRound": 22,
+  "ladder": [
+    {
+      "position": 1,
+      "teamId": 500014,
+      "name": "Panthers",
+      "themeKey": "panthers",
+      "played": 19,
+      "wins": 15,
+      "drawn": 0,
+      "lost": 4,
+      "byes": 3,
+      "pointsFor": 581,
+      "pointsAgainst": 273,
+      "pointsDifference": 308,
+      "points": 36,
+      "streak": "2W",
+      "form": "3 - 1",
+      "homeRecord": "8 - 1",
+      "awayRecord": "7 - 3",
+      "next": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "isBye": false
+      }
+    },
+    {
+      "position": 2,
+      "teamId": 500001,
+      "name": "Roosters",
+      "themeKey": "roosters",
+      "played": 19,
+      "wins": 14,
+      "drawn": 0,
+      "lost": 5,
+      "byes": 3,
+      "pointsFor": 531,
+      "pointsAgainst": 376,
+      "pointsDifference": 155,
+      "points": 34,
+      "streak": "4W",
+      "form": "4 - 0",
+      "homeRecord": "7 - 2",
+      "awayRecord": "7 - 3",
+      "next": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "isBye": false
+      }
+    },
+    {
+      "position": 3,
+      "teamId": 500032,
+      "name": "Warriors",
+      "themeKey": "warriors",
+      "played": 19,
+      "wins": 13,
+      "drawn": 0,
+      "lost": 6,
+      "byes": 3,
+      "pointsFor": 538,
+      "pointsAgainst": 312,
+      "pointsDifference": 226,
+      "points": 32,
+      "streak": "1W",
+      "form": "3 - 1",
+      "homeRecord": "7 - 2",
+      "awayRecord": "6 - 4",
+      "next": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "isBye": false
+      }
+    },
+    {
+      "position": 4,
+      "teamId": 500028,
+      "name": "Sharks",
+      "themeKey": "sharks",
+      "played": 19,
+      "wins": 13,
+      "drawn": 0,
+      "lost": 6,
+      "byes": 3,
+      "pointsFor": 568,
+      "pointsAgainst": 391,
+      "pointsDifference": 177,
+      "points": 32,
+      "streak": "5W",
+      "form": "5 - 0",
+      "homeRecord": "8 - 2",
+      "awayRecord": "5 - 4",
+      "next": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "isBye": false
+      }
+    },
+    {
+      "position": 5,
+      "teamId": 500723,
+      "name": "Dolphins",
+      "themeKey": "dolphins",
+      "played": 19,
+      "wins": 12,
+      "drawn": 0,
+      "lost": 7,
+      "byes": 3,
+      "pointsFor": 516,
+      "pointsAgainst": 426,
+      "pointsDifference": 90,
+      "points": 30,
+      "streak": "2W",
+      "form": "2 - 2",
+      "homeRecord": "6 - 4",
+      "awayRecord": "6 - 3",
+      "next": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "isBye": false
+      }
+    },
+    {
+      "position": 6,
+      "teamId": 500003,
+      "name": "Knights",
+      "themeKey": "knights",
+      "played": 20,
+      "wins": 12,
+      "drawn": 0,
+      "lost": 8,
+      "byes": 2,
+      "pointsFor": 511,
+      "pointsAgainst": 451,
+      "pointsDifference": 60,
+      "points": 28,
+      "streak": "1W",
+      "form": "2 - 3",
+      "homeRecord": "7 - 3",
+      "awayRecord": "5 - 5",
+      "next": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "isBye": false
+      }
+    },
+    {
+      "position": 7,
+      "teamId": 500005,
+      "name": "Rabbitohs",
+      "themeKey": "rabbitohs",
+      "played": 19,
+      "wins": 10,
+      "drawn": 0,
+      "lost": 9,
+      "byes": 3,
+      "pointsFor": 526,
+      "pointsAgainst": 464,
+      "pointsDifference": 62,
+      "points": 26,
+      "streak": "1L",
+      "form": "2 - 3",
+      "homeRecord": "7 - 2",
+      "awayRecord": "3 - 7",
+      "next": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "isBye": false
+      }
+    },
+    {
+      "position": 8,
+      "teamId": 500010,
+      "name": "Bulldogs",
+      "themeKey": "bulldogs",
+      "played": 19,
+      "wins": 10,
+      "drawn": 0,
+      "lost": 9,
+      "byes": 3,
+      "pointsFor": 378,
+      "pointsAgainst": 422,
+      "pointsDifference": -44,
+      "points": 26,
+      "streak": "3W",
+      "form": "3 - 1",
+      "homeRecord": "7 - 3",
+      "awayRecord": "3 - 6",
+      "next": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "isBye": false
+      }
+    },
+    {
+      "position": 9,
+      "teamId": 500012,
+      "name": "Cowboys",
+      "themeKey": "cowboys",
+      "played": 20,
+      "wins": 11,
+      "drawn": 0,
+      "lost": 9,
+      "byes": 2,
+      "pointsFor": 454,
+      "pointsAgainst": 552,
+      "pointsDifference": -98,
+      "points": 26,
+      "streak": "1L",
+      "form": "2 - 2",
+      "homeRecord": "6 - 4",
+      "awayRecord": "5 - 5",
+      "next": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "isBye": false
+      }
+    },
+    {
+      "position": 10,
+      "teamId": 500002,
+      "name": "Sea Eagles",
+      "themeKey": "sea-eagles",
+      "played": 19,
+      "wins": 9,
+      "drawn": 0,
+      "lost": 10,
+      "byes": 3,
+      "pointsFor": 485,
+      "pointsAgainst": 395,
+      "pointsDifference": 90,
+      "points": 24,
+      "streak": "4L",
+      "form": "1 - 4",
+      "homeRecord": "5 - 5",
+      "awayRecord": "4 - 5",
+      "next": {
+        "teamId": null,
+        "name": "To be confirmed",
+        "themeKey": null,
+        "isBye": true
+      }
+    },
+    {
+      "position": 11,
+      "teamId": 500013,
+      "name": "Raiders",
+      "themeKey": "raiders",
+      "played": 20,
+      "wins": 9,
+      "drawn": 0,
+      "lost": 11,
+      "byes": 2,
+      "pointsFor": 453,
+      "pointsAgainst": 512,
+      "pointsDifference": -59,
+      "points": 22,
+      "streak": "1L",
+      "form": "3 - 1",
+      "homeRecord": "5 - 5",
+      "awayRecord": "4 - 6",
+      "next": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "isBye": false
+      }
+    },
+    {
+      "position": 12,
+      "teamId": 500021,
+      "name": "Storm",
+      "themeKey": "storm",
+      "played": 20,
+      "wins": 8,
+      "drawn": 0,
+      "lost": 12,
+      "byes": 2,
+      "pointsFor": 468,
+      "pointsAgainst": 494,
+      "pointsDifference": -26,
+      "points": 20,
+      "streak": "3L",
+      "form": "1 - 3",
+      "homeRecord": "6 - 4",
+      "awayRecord": "2 - 8",
+      "next": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "isBye": false
+      }
+    },
+    {
+      "position": 13,
+      "teamId": 500031,
+      "name": "Eels",
+      "themeKey": "eels",
+      "played": 19,
+      "wins": 7,
+      "drawn": 0,
+      "lost": 12,
+      "byes": 3,
+      "pointsFor": 365,
+      "pointsAgainst": 544,
+      "pointsDifference": -179,
+      "points": 20,
+      "streak": "1W",
+      "form": "2 - 2",
+      "homeRecord": "4 - 6",
+      "awayRecord": "3 - 6",
+      "next": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "isBye": false
+      }
+    },
+    {
+      "position": 14,
+      "teamId": 500004,
+      "name": "Titans",
+      "themeKey": "titans",
+      "played": 19,
+      "wins": 6,
+      "drawn": 0,
+      "lost": 13,
+      "byes": 3,
+      "pointsFor": 379,
+      "pointsAgainst": 501,
+      "pointsDifference": -122,
+      "points": 18,
+      "streak": "1L",
+      "form": "2 - 2",
+      "homeRecord": "3 - 5",
+      "awayRecord": "3 - 8",
+      "next": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "isBye": false
+      }
+    },
+    {
+      "position": 15,
+      "teamId": 500011,
+      "name": "Broncos",
+      "themeKey": "broncos",
+      "played": 19,
+      "wins": 6,
+      "drawn": 0,
+      "lost": 13,
+      "byes": 3,
+      "pointsFor": 345,
+      "pointsAgainst": 501,
+      "pointsDifference": -156,
+      "points": 18,
+      "streak": "2L",
+      "form": "1 - 3",
+      "homeRecord": "2 - 8",
+      "awayRecord": "4 - 5",
+      "next": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "isBye": false
+      }
+    },
+    {
+      "position": 16,
+      "teamId": 500023,
+      "name": "Wests Tigers",
+      "themeKey": "wests-tigers",
+      "played": 20,
+      "wins": 7,
+      "drawn": 0,
+      "lost": 13,
+      "byes": 2,
+      "pointsFor": 378,
+      "pointsAgainst": 589,
+      "pointsDifference": -211,
+      "points": 18,
+      "streak": "5L",
+      "form": "0 - 5",
+      "homeRecord": "5 - 6",
+      "awayRecord": "2 - 7",
+      "next": {
+        "teamId": null,
+        "name": "To be confirmed",
+        "themeKey": null,
+        "isBye": true
+      }
+    },
+    {
+      "position": 17,
+      "teamId": 500022,
+      "name": "Dragons",
+      "themeKey": "dragons",
+      "played": 19,
+      "wins": 2,
+      "drawn": 0,
+      "lost": 17,
+      "byes": 3,
+      "pointsFor": 296,
+      "pointsAgainst": 569,
+      "pointsDifference": -273,
+      "points": 10,
+      "streak": "3L",
+      "form": "1 - 3",
+      "homeRecord": "1 - 8",
+      "awayRecord": "1 - 9",
+      "next": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "isBye": false
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allegiant Stadium",
+      "venueCity": "Las Vegas",
+      "kickOff": "2026-03-01T02:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/knights-v-cowboys",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 18
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allegiant Stadium",
+      "venueCity": "Las Vegas",
+      "kickOff": "2026-03-01T04:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/bulldogs-v-dragons",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 15
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 14
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-03-05T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/storm-v-eels",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 52
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 4
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-03-06T07:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/warriors-v-roosters",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 42
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 18
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-03-06T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/broncos-v-panthers",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 0
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 26
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-07T06:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/sharks-v-titans",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 50
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 10
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-07T08:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/sea-eagles-v-raiders",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 29
+      }
+    },
+    {
+      "round": 1,
+      "roundTitle": "Round 1",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-03-08T05:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-1/dolphins-v-rabbitohs",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 40
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-03-12T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/broncos-v-eels",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 40
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-03-13T07:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/warriors-v-raiders",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 40
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 6
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-13T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/roosters-v-rabbitohs",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 18
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Leichhardt Oval",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-14T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/wests-tigers-v-cowboys",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 44
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 16
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong",
+      "kickOff": "2026-03-14T06:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/dragons-v-storm",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 46
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Carrington Park",
+      "venueCity": "Bathurst",
+      "kickOff": "2026-03-14T08:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/panthers-v-sharks",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 6
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-15T05:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/sea-eagles-v-knights",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 16
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 36
+      }
+    },
+    {
+      "round": 2,
+      "roundTitle": "Round 2",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-03-15T07:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-2/dolphins-v-titans",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 14
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-03-19T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/raiders-v-bulldogs",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 10
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 14
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-20T07:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/roosters-v-panthers",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 4
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 40
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-03-20T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/storm-v-broncos",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 18
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-03-21T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/knights-v-warriors",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 38
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-21T06:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/sharks-v-dolphins",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 10
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 38
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Polytec Stadium",
+      "venueCity": "Gosford",
+      "kickOff": "2026-03-21T08:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/rabbitohs-v-wests-tigers",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 16
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-22T05:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/eels-v-dragons",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 20
+      }
+    },
+    {
+      "round": 3,
+      "roundTitle": "Round 3",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-03-22T07:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-3/cowboys-v-titans",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 16
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-26T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/sea-eagles-v-roosters",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 16
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 33
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-03-27T07:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/warriors-v-wests-tigers",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 32
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-03-27T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/broncos-v-dolphins",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 12
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-28T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/bulldogs-v-knights",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 16
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 24
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-03-28T06:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/panthers-v-eels",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 48
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 20
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-03-28T08:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/cowboys-v-storm",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 24
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-03-29T05:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/raiders-v-sharks",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 34
+      }
+    },
+    {
+      "round": 4,
+      "roundTitle": "Round 4",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-03-29T07:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-4/titans-v-dragons",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 14
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Kayo Stadium",
+      "venueCity": "Redcliffe",
+      "kickOff": "2026-04-02T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/dolphins-v-sea-eagles",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 52
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-03T05:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/rabbitohs-v-bulldogs",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 24
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-03T09:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/panthers-v-storm",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 50
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 10
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-04-04T06:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/dragons-v-cowboys",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 0
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 32
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-04-04T08:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/titans-v-broncos",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 26
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-05T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/sharks-v-warriors",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 36
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 22
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-04-05T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/knights-v-raiders",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 12
+      }
+    },
+    {
+      "round": 5,
+      "roundTitle": "Round 5",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-06T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-5/eels-v-wests-tigers",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 22
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-09T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/bulldogs-v-panthers",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 16
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong",
+      "kickOff": "2026-04-10T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/dragons-v-sea-eagles",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 28
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-04-10T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/broncos-v-cowboys",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 31
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 35
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Optus Stadium",
+      "venueCity": "Perth",
+      "kickOff": "2026-04-11T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/rabbitohs-v-raiders",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 34
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 36
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Optus Stadium",
+      "venueCity": "Perth",
+      "kickOff": "2026-04-11T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/sharks-v-roosters",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 34
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-04-11T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/storm-v-warriors",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 38
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-12T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/eels-v-titans",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 10
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 52
+      }
+    },
+    {
+      "round": 6,
+      "roundTitle": "Round 6",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-12T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-6/wests-tigers-v-knights",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 42
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 22
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-04-16T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/cowboys-v-sea-eagles",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 6
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 38
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-04-17T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/raiders-v-storm",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 22
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "TIO Stadium",
+      "venueCity": "Darwin",
+      "kickOff": "2026-04-17T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/dolphins-v-panthers",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 23
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-04-18T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/warriors-v-titans",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 20
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-18T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/rabbitohs-v-dragons",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 12
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-18T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/wests-tigers-v-broncos",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 21
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-19T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/roosters-v-knights",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 38
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 24
+      }
+    },
+    {
+      "round": 7,
+      "roundTitle": "Round 7",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-19T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-7/eels-v-bulldogs",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 38
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 20
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Leichhardt Oval",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-23T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/wests-tigers-v-raiders",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 33
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 14
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-04-24T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/cowboys-v-sharks",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 46
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 34
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-04-24T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/broncos-v-bulldogs",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 12
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-25T06:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/dragons-v-roosters",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 16
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 62
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Hnry Stadium",
+      "venueCity": "Wellington",
+      "kickOff": "2026-04-25T08:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/warriors-v-dolphins",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 18
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-04-25T10:10:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/storm-v-rabbitohs",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 6
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 48
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-04-26T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/knights-v-panthers",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 44
+      }
+    },
+    {
+      "round": 8,
+      "roundTitle": "Round 8",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-04-26T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-8/sea-eagles-v-eels",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 33
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 18
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-01T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/bulldogs-v-cowboys",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 28
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-01T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/dolphins-v-storm",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 10
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-05-02T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/titans-v-raiders",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 28
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-02T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/eels-v-warriors",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 36
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-02T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/roosters-v-broncos",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 38
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 24
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-05-03T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/knights-v-rabbitohs",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 42
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 38
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-03T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/sharks-v-wests-tigers",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 52
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 10
+      }
+    },
+    {
+      "round": 9,
+      "roundTitle": "Round 9",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-03T08:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-9/panthers-v-sea-eagles",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 16
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-07T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/dolphins-v-bulldogs",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 44
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 12
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Polytec Stadium",
+      "venueCity": "Gosford",
+      "kickOff": "2026-05-08T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/roosters-v-titans",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 12
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-05-08T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/cowboys-v-eels",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 33
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong",
+      "kickOff": "2026-05-09T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/dragons-v-knights",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 10
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 44
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-09T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/rabbitohs-v-sharks",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 36
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 12
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-09T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/sea-eagles-v-broncos",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 4
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-05-10T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/storm-v-wests-tigers",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 44
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 16
+      }
+    },
+    {
+      "round": 10,
+      "roundTitle": "Round 10",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-05-10T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-10/raiders-v-panthers",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 30
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-15T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/sharks-v-bulldogs",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 38
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 16
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-15T10:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/rabbitohs-v-dolphins",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 10
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 32
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-16T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/wests-tigers-v-sea-eagles",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 46
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-16T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/roosters-v-cowboys",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 18
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-16T09:45:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/eels-v-storm",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 8
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 34
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-17T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/titans-v-knights",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 36
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-17T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/warriors-v-broncos",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 42
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 12
+      }
+    },
+    {
+      "round": 11,
+      "roundTitle": "Round 11",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-17T08:25:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-11/panthers-v-dragons",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 6
+      }
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-05-21T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-12/raiders-v-dolphins",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 30
+      }
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-22T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-12/bulldogs-v-storm",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 20
+      }
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-05-23T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-12/dragons-v-warriors",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 30
+      }
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-23T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-12/sea-eagles-v-titans",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 10
+      }
+    },
+    {
+      "round": 12,
+      "roundTitle": "Round 12",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-05-24T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-12/cowboys-v-rabbitohs",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 18
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-29T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/sharks-v-sea-eagles",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 22
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-05-30T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/knights-v-eels",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 22
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-30T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/wests-tigers-v-bulldogs",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 16
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-05-30T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/storm-v-roosters",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 4
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-05-31T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/broncos-v-dragons",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 30
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-05-31T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/raiders-v-cowboys",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 12
+      }
+    },
+    {
+      "round": 13,
+      "roundTitle": "Round 13",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-05-31T08:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-13/panthers-v-warriors",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 18
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-04T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/sea-eagles-v-rabbitohs",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 14
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-06-05T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/storm-v-knights",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 30
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-06-05T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/raiders-v-roosters",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 0
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 26
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-06-06T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/cowboys-v-dolphins",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 40
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-06T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/broncos-v-titans",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 23
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 28
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-07T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/wests-tigers-v-panthers",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 0
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 68
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-07T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/sharks-v-dragons",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 34
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 12
+      }
+    },
+    {
+      "round": 14,
+      "roundTitle": "Round 14",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-08T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-14/bulldogs-v-eels",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 12
+      }
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-11T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-15/rabbitohs-v-broncos",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 48
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 6
+      }
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-12T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-15/dolphins-v-roosters",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 48
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 10
+      }
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-06-13T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-15/warriors-v-sharks",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 8
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 10
+      }
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-13T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-15/eels-v-raiders",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 15
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 12
+      }
+    },
+    {
+      "round": 15,
+      "roundTitle": "Round 15",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Leichhardt Oval",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-14T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-15/wests-tigers-v-titans",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 36
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 28
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-06-19T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/knights-v-dragons",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 20
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-20T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/wests-tigers-v-dolphins",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 36
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-06-20T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/titans-v-panthers",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 19
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 18
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-20T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/bulldogs-v-sea-eagles",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 13
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 12
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "One NZ Stadium",
+      "venueCity": "Christchurch",
+      "kickOff": "2026-06-21T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/warriors-v-cowboys",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 38
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 20
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-06-21T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/storm-v-raiders",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 42
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 20
+      }
+    },
+    {
+      "round": 16,
+      "roundTitle": "Round 16",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-21T08:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-16/roosters-v-sharks",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 27
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 8
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-25T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/eels-v-rabbitohs",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 32
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-06-26T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/titans-v-bulldogs",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 30
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-26T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/broncos-v-roosters",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 24
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-06-27T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/dolphins-v-warriors",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 24
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-06-27T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/cowboys-v-panthers",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 12
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-06-27T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/sea-eagles-v-storm",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 30
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 4
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-06-28T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/raiders-v-dragons",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 24
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 16
+      }
+    },
+    {
+      "round": 17,
+      "roundTitle": "Round 17",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-06-28T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-17/knights-v-wests-tigers",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 6
+      }
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-03T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-18/panthers-v-rabbitohs",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 36
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 14
+      }
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-07-04T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-18/dragons-v-wests-tigers",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 24
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 10
+      }
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-07-04T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-18/broncos-v-sharks",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 16
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 28
+      }
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-05T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-18/eels-v-sea-eagles",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 23
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 14
+      }
+    },
+    {
+      "round": 18,
+      "roundTitle": "Round 18",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-07-05T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-18/knights-v-dolphins",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 13
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 12
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Campbelltown Sports Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-10T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/wests-tigers-v-warriors",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 6
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 32
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Kayo Stadium",
+      "venueCity": "Redcliffe",
+      "kickOff": "2026-07-11T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/dolphins-v-sharks",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 0
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 66
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-11T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/bulldogs-v-raiders",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 16
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 40
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-11T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/roosters-v-eels",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 12
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-12T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/rabbitohs-v-knights",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 26
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 24
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-12T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/sea-eagles-v-cowboys",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 19
+      }
+    },
+    {
+      "round": 19,
+      "roundTitle": "Round 19",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-07-12T08:15:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-19/storm-v-titans",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 18
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-16T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/panthers-v-broncos",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 14
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-17T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/sharks-v-knights",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 18
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-17T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/roosters-v-storm",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 14
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 6
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-07-18T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/raiders-v-rabbitohs",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 34
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 24
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-07-18T07:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/warriors-v-dragons",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 20
+      },
+      "away": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 12
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-18T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/bulldogs-v-wests-tigers",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 0
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-07-19T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/titans-v-sea-eagles",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 38
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 32
+      }
+    },
+    {
+      "round": 20,
+      "roundTitle": "Round 20",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-07-19T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-20/dolphins-v-cowboys",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 36
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 16
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-23T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/eels-v-panthers",
+      "home": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 24
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "McDonald Jones Stadium",
+      "venueCity": "Newcastle",
+      "kickOff": "2026-07-24T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/knights-v-roosters",
+      "home": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 23
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-24T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/rabbitohs-v-storm",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 28
+      },
+      "away": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 26
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-07-25T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/raiders-v-wests-tigers",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 56
+      },
+      "away": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 10
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Accor Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-25T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/bulldogs-v-warriors",
+      "home": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 6
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-07-25T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/cowboys-v-broncos",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 10
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-07-26T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/dragons-v-titans",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 18
+      },
+      "away": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 38
+      }
+    },
+    {
+      "round": 21,
+      "roundTitle": "Round 21",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "4 Pines Park",
+      "venueCity": "Sydney",
+      "kickOff": "2026-07-26T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-21/sea-eagles-v-sharks",
+      "home": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 48
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Queensland Country Bank Stadium",
+      "venueCity": "Townsville",
+      "kickOff": "2026-07-30T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/cowboys-v-roosters",
+      "home": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": 12
+      },
+      "away": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": 82
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "WIN Stadium",
+      "venueCity": "Wollongong",
+      "kickOff": "2026-07-31T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/dragons-v-dolphins",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": 28
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "AAMI Park",
+      "venueCity": "Melbourne",
+      "kickOff": "2026-07-31T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/storm-v-bulldogs",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": 22
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": 36
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-08-01T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/titans-v-warriors",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": 6
+      },
+      "away": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": 42
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Glen Willow Oval",
+      "venueCity": "Mudgee",
+      "kickOff": "2026-08-01T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/panthers-v-raiders",
+      "home": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": 42
+      },
+      "away": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": 18
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-01T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/broncos-v-knights",
+      "home": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": 6
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": 30
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "Ocean Protect Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-02T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/sharks-v-rabbitohs",
+      "home": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": 32
+      },
+      "away": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": 16
+      }
+    },
+    {
+      "round": 22,
+      "roundTitle": "Round 22",
+      "matchState": "FullTime",
+      "matchMode": "Post",
+      "isComplete": true,
+      "venue": "CommBank Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-02T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-22/wests-tigers-v-eels",
+      "home": {
+        "teamId": 500023,
+        "name": "Wests Tigers",
+        "themeKey": "wests-tigers",
+        "score": 13
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": 16
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "Cbus Super Stadium",
+      "venueCity": "Gold Coast",
+      "kickOff": "2026-08-06T09:50:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/titans-v-cowboys",
+      "home": {
+        "teamId": 500004,
+        "name": "Titans",
+        "themeKey": "titans",
+        "score": null
+      },
+      "away": {
+        "teamId": 500012,
+        "name": "Cowboys",
+        "themeKey": "cowboys",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "Go Media Stadium",
+      "venueCity": "Auckland",
+      "kickOff": "2026-08-07T08:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/warriors-v-panthers",
+      "home": {
+        "teamId": 500032,
+        "name": "Warriors",
+        "themeKey": "warriors",
+        "score": null
+      },
+      "away": {
+        "teamId": 500014,
+        "name": "Panthers",
+        "themeKey": "panthers",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-07T10:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/roosters-v-bulldogs",
+      "home": {
+        "teamId": 500001,
+        "name": "Roosters",
+        "themeKey": "roosters",
+        "score": null
+      },
+      "away": {
+        "teamId": 500010,
+        "name": "Bulldogs",
+        "themeKey": "bulldogs",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "HBF Park",
+      "venueCity": "Perth",
+      "kickOff": "2026-08-08T05:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/storm-v-sea-eagles",
+      "home": {
+        "teamId": 500021,
+        "name": "Storm",
+        "themeKey": "storm",
+        "score": null
+      },
+      "away": {
+        "teamId": 500002,
+        "name": "Sea Eagles",
+        "themeKey": "sea-eagles",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "Suncorp Stadium",
+      "venueCity": "Brisbane",
+      "kickOff": "2026-08-08T07:30:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/dolphins-v-broncos",
+      "home": {
+        "teamId": 500723,
+        "name": "Dolphins",
+        "themeKey": "dolphins",
+        "score": null
+      },
+      "away": {
+        "teamId": 500011,
+        "name": "Broncos",
+        "themeKey": "broncos",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "Allianz Stadium",
+      "venueCity": "Sydney",
+      "kickOff": "2026-08-08T09:35:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/rabbitohs-v-eels",
+      "home": {
+        "teamId": 500005,
+        "name": "Rabbitohs",
+        "themeKey": "rabbitohs",
+        "score": null
+      },
+      "away": {
+        "teamId": 500031,
+        "name": "Eels",
+        "themeKey": "eels",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "GIO Stadium",
+      "venueCity": "Canberra",
+      "kickOff": "2026-08-09T04:00:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/raiders-v-knights",
+      "home": {
+        "teamId": 500013,
+        "name": "Raiders",
+        "themeKey": "raiders",
+        "score": null
+      },
+      "away": {
+        "teamId": 500003,
+        "name": "Knights",
+        "themeKey": "knights",
+        "score": null
+      }
+    },
+    {
+      "round": 23,
+      "roundTitle": "Round 23",
+      "matchState": "Upcoming",
+      "matchMode": "Pre",
+      "isComplete": false,
+      "venue": "St George Venues Jubilee Stadium",
+      "venueCity": "Kogarah",
+      "kickOff": "2026-08-09T06:05:00Z",
+      "matchCentreUrl": "https://www.nrl.com/draw/nrl-premiership/2026/round-23/dragons-v-sharks",
+      "home": {
+        "teamId": 500022,
+        "name": "Dragons",
+        "themeKey": "dragons",
+        "score": null
+      },
+      "away": {
+        "teamId": 500028,
+        "name": "Sharks",
+        "themeKey": "sharks",
+        "score": null
+      }
+    }
+  ],
+  "updatedAt": "2026-08-02T09:07:52.059Z"
 }

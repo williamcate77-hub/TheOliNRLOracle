@@ -22,14 +22,19 @@ export function ago(updatedAt: string, now: number): string {
 
 const plural = (n: number, unit: string) => `${n} ${unit}${n === 1 ? '' : 's'} ago`
 
+// Australian formatting, the device's own time zone. Locale is pinned because a
+// kick-off written 18:00 is not how anyone here says it; the zone is not pinned
+// because the whole point is that it reads in the time the reader is living in.
+const LOCALE = 'en-AU'
+
 /** Kick-off in the reader's own time zone. "Sat 8 Aug, 7:35pm". */
 export function kickOff(iso: string | null): string | null {
   if (!iso) return null
   const d = new Date(iso)
   if (Number.isNaN(d.getTime())) return null
-  const day = d.toLocaleDateString(undefined, { weekday: 'short', day: 'numeric', month: 'short' })
+  const day = d.toLocaleDateString(LOCALE, { weekday: 'short', day: 'numeric', month: 'short' })
   const time = d
-    .toLocaleTimeString(undefined, { hour: 'numeric', minute: '2-digit' })
+    .toLocaleTimeString(LOCALE, { hour: 'numeric', minute: '2-digit' })
     .replace(/\s/g, '')
     .toLowerCase()
   return `${day}, ${time}`
@@ -40,5 +45,5 @@ export function shortDate(iso: string | null): string | null {
   if (!iso) return null
   const d = new Date(iso)
   if (Number.isNaN(d.getTime())) return null
-  return d.toLocaleDateString(undefined, { day: 'numeric', month: 'short' })
+  return d.toLocaleDateString(LOCALE, { day: 'numeric', month: 'short' })
 }

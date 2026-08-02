@@ -16,23 +16,30 @@ export type Club = {
   name: string
   accent: string
   accentDeep: string
+  /**
+   * Five clubs have a badge that is black, near-black or carries dark lettering,
+   * and simply vanishes against the base colour. The NRL publishes a
+   * badge-light.svg for exactly this case, so those five use it. It is still the
+   * club's own badge, not a recolour.
+   */
+  badgeLight?: true
 }
 
 export const CLUBS: Club[] = [
-  { teamId: 500011, themeKey: 'broncos', name: 'Broncos', accent: '#FFC72C', accentDeep: '#6C1D45' },
+  { teamId: 500011, themeKey: 'broncos', name: 'Broncos', accent: '#FFC72C', accentDeep: '#6C1D45', badgeLight: true },
   { teamId: 500010, themeKey: 'bulldogs', name: 'Bulldogs', accent: '#2B6DEF', accentDeep: '#00539F' },
   { teamId: 500012, themeKey: 'cowboys', name: 'Cowboys', accent: '#3C7BD4', accentDeep: '#002B5C' },
   { teamId: 500723, themeKey: 'dolphins', name: 'Dolphins', accent: '#E4002B', accentDeep: '#B4975A' },
   { teamId: 500022, themeKey: 'dragons', name: 'Dragons', accent: '#E2231A', accentDeep: '#009B48' },
   { teamId: 500031, themeKey: 'eels', name: 'Eels', accent: '#F5C518', accentDeep: '#006BB6' },
   { teamId: 500003, themeKey: 'knights', name: 'Knights', accent: '#00A9E0', accentDeep: '#003F71' },
-  { teamId: 500014, themeKey: 'panthers', name: 'Panthers', accent: '#00A44E', accentDeep: '#1A1A1A' },
+  { teamId: 500014, themeKey: 'panthers', name: 'Panthers', accent: '#00A44E', accentDeep: '#1A1A1A', badgeLight: true },
   { teamId: 500005, themeKey: 'rabbitohs', name: 'Rabbitohs', accent: '#DA291C', accentDeep: '#005741' },
-  { teamId: 500013, themeKey: 'raiders', name: 'Raiders', accent: '#95C11F', accentDeep: '#00539F' },
+  { teamId: 500013, themeKey: 'raiders', name: 'Raiders', accent: '#95C11F', accentDeep: '#00539F', badgeLight: true },
   { teamId: 500001, themeKey: 'roosters', name: 'Roosters', accent: '#E8112D', accentDeep: '#0A2240' },
   { teamId: 500002, themeKey: 'sea-eagles', name: 'Sea Eagles', accent: '#87004D', accentDeep: '#6D0038' },
-  { teamId: 500028, themeKey: 'sharks', name: 'Sharks', accent: '#00B2A9', accentDeep: '#0057B8' },
-  { teamId: 500021, themeKey: 'storm', name: 'Storm', accent: '#8246AF', accentDeep: '#632390' },
+  { teamId: 500028, themeKey: 'sharks', name: 'Sharks', accent: '#00B2A9', accentDeep: '#0057B8', badgeLight: true },
+  { teamId: 500021, themeKey: 'storm', name: 'Storm', accent: '#8246AF', accentDeep: '#632390', badgeLight: true },
   { teamId: 500004, themeKey: 'titans', name: 'Titans', accent: '#009AD8', accentDeep: '#C8A45C' },
   { teamId: 500032, themeKey: 'warriors', name: 'Warriors', accent: '#00A0DC', accentDeep: '#231F20' },
   { teamId: 500023, themeKey: 'wests-tigers', name: 'Wests Tigers', accent: '#F68B1F', accentDeep: '#000000' },
@@ -44,4 +51,7 @@ const BY_ID = new Map(CLUBS.map((c) => [c.teamId, c]))
 export const clubByThemeKey = (key: string) => BY_THEME.get(key)
 export const clubById = (id: number) => BY_ID.get(id)
 
-export const badgeUrl = (themeKey: string) => `https://www.nrl.com/.theme/${themeKey}/badge.svg`
+export function badgeUrl(themeKey: string): string {
+  const variant = BY_THEME.get(themeKey)?.badgeLight ? 'badge-light' : 'badge'
+  return `https://www.nrl.com/.theme/${themeKey}/${variant}.svg`
+}

@@ -22,6 +22,18 @@ const sans = Inter({
 export const metadata: Metadata = {
   title: 'The Oracle — NRL 2026',
   description: 'Every NRL team, the ladder, every match and every player. Updated when you say so.',
+  manifest: '/manifest.webmanifest',
+  icons: {
+    icon: '/icon-192.png',
+    apple: '/apple-touch-icon.png',
+  },
+  appleWebApp: {
+    // Launches from the home screen without Safari's chrome, and titles the
+    // icon on the home screen.
+    capable: true,
+    title: 'NRL Oracle',
+    statusBarStyle: 'black-translucent',
+  },
 }
 
 export const viewport: Viewport = {

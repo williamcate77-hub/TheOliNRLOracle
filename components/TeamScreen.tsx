@@ -36,7 +36,10 @@ export function TeamScreen({ teamId }: { teamId: number }) {
   const { club, row, results, next } = team
 
   return (
-    <div style={{ ['--accent' as string]: club.accent, ['--accent-deep' as string]: club.accentDeep }}>
+    <div
+      style={{ ['--accent' as string]: club.accent, ['--accent-deep' as string]: club.accentDeep }}
+      data-club={club.themeKey}
+    >
       <RefreshHeader title={club.name} back />
 
       <main className="shell">
@@ -91,7 +94,10 @@ export function TeamScreen({ teamId }: { teamId: number }) {
 
         <Section title="Next match">
           {next ? (
-            <div className={styles.next}>
+            {/* data-club names the opponent, not the club whose screen this is,
+                so a Souths badge cheers wherever it appears — and the Souths
+                screen itself does not cheer for someone else's result row. */}
+            <div className={styles.next} data-club={opponentOf(next, teamId).themeKey}>
               <img className={styles.nextBadge} src={badgeUrl(opponentOf(next, teamId).themeKey)} alt="" />
               <div className={styles.nextBody}>
                 <p className={styles.nextOpponent}>
@@ -162,9 +168,14 @@ function Result({
         {res === 'win' ? 'W' : res === 'loss' ? 'L' : 'D'}
       </span>
 
-      <img className={styles.resultBadge} src={badgeUrl(them.themeKey)} alt="" />
+      <img
+        className={styles.resultBadge}
+        src={badgeUrl(them.themeKey)}
+        alt=""
+        data-club={them.themeKey}
+      />
 
-      <div className={styles.resultBody}>
+      <div className={styles.resultBody} data-club={them.themeKey}>
         <p className={styles.resultOpponent}>
           <span className={styles.versus}>{isHome(fixture, teamId) ? 'v' : '@'}</span> {them.name}
         </p>

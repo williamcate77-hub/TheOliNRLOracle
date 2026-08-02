@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Oswald } from 'next/font/google'
+import { PlayersProvider } from '@/components/PlayersProvider'
 import { RabbitohsEasterEgg } from '@/components/RabbitohsEasterEgg'
 import { SeasonProvider } from '@/components/SeasonProvider'
 import './globals.css'
@@ -20,7 +21,7 @@ const sans = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'The Oracle — NRL 2026',
+  title: "Oli's NRL Oracle",
   description: 'Every NRL team, the ladder, every match and every player. Updated when you say so.',
   manifest: '/manifest.webmanifest',
   icons: {
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
     // Launches from the home screen without Safari's chrome, and titles the
     // icon on the home screen.
     capable: true,
-    title: 'NRL Oracle',
+    title: "Oli's NRL Oracle",
     statusBarStyle: 'black-translucent',
   },
 }
@@ -47,7 +48,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en-AU" className={`${condensed.variable} ${sans.variable}`}>
       <body>
-        <SeasonProvider>{children}</SeasonProvider>
+        {/* Players wraps Season because a season refresh pulls player totals
+            along with it. */}
+        <PlayersProvider>
+          <SeasonProvider>{children}</SeasonProvider>
+        </PlayersProvider>
         {/* At layout level so the sound and the overlay survive the navigation
             the click usually causes. */}
         <RabbitohsEasterEgg />

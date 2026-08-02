@@ -1,12 +1,14 @@
 'use client'
 
+import Image from 'next/image'
 import Link from 'next/link'
 import { RefreshHeader } from '@/components/RefreshHeader'
+import { useFreshest } from '@/components/PlayersProvider'
 import { useSeason } from '@/components/SeasonProvider'
 import { useNow } from '@/components/useNow'
 import { badgeUrl } from '@/lib/clubs'
 import { isHome, opponentOf, outcome, selectTeam } from '@/lib/nrl/select'
-import type { Fixture } from '@/lib/nrl/types'
+import type { Fixture, PlayerSeason } from '@/lib/nrl/types'
 import { kickOff, shortDate } from '@/lib/time'
 import styles from './TeamScreen.module.css'
 
@@ -14,9 +16,11 @@ import styles from './TeamScreen.module.css'
 // because it is the number Oliver actually wants; everything else is arranged
 // underneath it in the order the brief sets out.
 
-export function TeamScreen({ teamId }: { teamId: number }) {
+export function TeamScreen({ teamId, squad }: { teamId: number; squad: PlayerSeason[] }) {
   const { season } = useSeason()
   const now = useNow()
+  // The squad comes from the build; anything a refresh has since pulled wins.
+  const players = useFreshest(squad)
 
   const team = selectTeam(season, teamId)
 
@@ -138,7 +142,56 @@ export function TeamScreen({ teamId }: { teamId: number }) {
           )}
         </Section>
 
-        <p className={styles.footnote}>Squad and player stats are coming next.</p>
+        <Section title={`Squad${players.length ? ` · ${players.length}` : ''}`}>
+          {players.length ? (
+            <ul className={styles.squad}>
+              {players.map((p) => (
+                <li key={p.playerId}>
+                  <Link href={`/player/${p.playerId}`} className={styles.player}>
+                    <span className={`num ${styles.jersey}`}>{p.number ?? '–'}</span>
+                    {p.headImage ? (
+                      <Image
+                        className={styles.face}
+                        src={p.headImage}
+                        alt=""
+                        width={48}
+                        height={48}
+                        loading="lazy"
+                        unoptimized={false}
+                      />
+                    ) : (
+                      // No photo on file, so the club silhouette stands in.
+                      <img
+                        className={`${styles.face} ${styles.faceFallback}`}
+                        src={`https://www.nrl.com/.theme/${club.themeKey}/silhouette.svg`}
+                        alt=""
+                        loading="lazy"
+                      />
+                    )}
+                    <span className={styles.playerBody}>
+                      <span className={styles.playerName}>
+                        {p.firstName} {p.lastName}
+                      </span>
+                      <span className={styles.playerMeta}>
+                        {[p.position, `${p.totals.games} ${p.totals.games === 1 ? 'game' : 'games'}`]
+                          .filter(Boolean)
+                          .join(' · ')}
+                      </span>
+                    </span>
+                    <span className={styles.playerStat}>
+                      <span className={`num ${styles.playerStatValue}`}>{p.totals.tries}</span>
+                      <span className={styles.playerStatLabel}>T</span>
+                      <span className={`num ${styles.playerStatValue}`}>{p.totals.points}</span>
+                      <span className={styles.playerStatLabel}>pts</span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <p className={styles.empty}>No squad on file yet.</p>
+          )}
+        </Section>
       </main>
     </div>
   )

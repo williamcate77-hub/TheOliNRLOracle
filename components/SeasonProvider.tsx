@@ -1,6 +1,7 @@
 'use client'
 
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
+import { usePlayers } from '@/components/PlayersProvider'
 import seed from '@/data/season-2026.json'
 import type { Season } from '@/lib/nrl/types'
 
@@ -37,6 +38,7 @@ export function SeasonProvider({ children }: { children: React.ReactNode }) {
   const [ready, setReady] = useState(false)
   const inFlight = useRef(false)
   const resetTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
+  const { pull: pullPlayers } = usePlayers()
 
   useEffect(() => {
     try {
@@ -82,7 +84,19 @@ export function SeasonProvider({ children }: { children: React.ReactNode }) {
       }
 
       const next = body.season as Season
-      const changed = fingerprint(next) !== fingerprint(season)
+      const seasonChanged = fingerprint(next) !== fingerprint(season)
+
+      // Player totals ride along on the same user action. A failure here is not
+      // a failed refresh — the ladder and the fixtures already came back fine,
+      // and the squad numbers are simply as old as they were.
+      let playersChanged = false
+      try {
+        playersChanged = await pullPlayers()
+      } catch {
+        playersChanged = false
+      }
+
+      const changed = seasonChanged || playersChanged
 
       // The numbers are replaced either way — updatedAt has moved even when
       // nothing else has — but the user is told which of the two happened.
@@ -99,7 +113,7 @@ export function SeasonProvider({ children }: { children: React.ReactNode }) {
     } finally {
       inFlight.current = false
     }
-  }, [season, settle])
+  }, [season, settle, pullPlayers])
 
   const value = useMemo(() => ({ season, state, refresh, ready }), [season, state, refresh, ready])
 

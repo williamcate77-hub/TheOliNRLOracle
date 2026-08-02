@@ -1,0 +1,128 @@
+.hero {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  padding: 16px 0 26px;
+  overflow: hidden;
+  min-height: 190px;
+}
+
+.watermark {
+  position: absolute;
+  top: -46px;
+  right: -80px;
+  width: 230px;
+  height: 230px;
+  object-fit: contain;
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/* The body shot sits on the club colour rather than floating on the base, so a
+   cut-out with a soft edge still reads as deliberate. */
+/* Body shots are cut-outs of varying framing, so they are contained rather than
+   cropped — cropping to a fixed box took the top off some players' heads. */
+.portrait {
+  position: relative;
+  width: 138px;
+  height: 176px;
+  flex: none;
+  object-fit: contain;
+  object-position: bottom center;
+  background: var(--accent-deep);
+}
+
+.portraitFallback {
+  object-fit: contain;
+  padding: 22px;
+  opacity: 0.5;
+}
+
+.identity {
+  position: relative;
+  padding-bottom: 6px;
+  min-width: 0;
+}
+
+.jersey {
+  font-size: 44px;
+  font-weight: 600;
+  color: var(--accent);
+  line-height: 0.85;
+  margin-bottom: 10px;
+}
+
+.name {
+  margin-bottom: 7px;
+}
+
+.first {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dim);
+  line-height: 1.1;
+}
+
+.last {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  line-height: 1.05;
+  word-break: break-word;
+}
+
+/* Tries and conversions, which is what Oliver asked for by name. */
+.headline {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  padding: 18px 0 22px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.leadValue {
+  font-size: 46px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 7px;
+}
+
+.block {
+  border-bottom: 1px solid var(--line);
+  padding: 18px 0;
+}
+
+.blockTitle {
+  margin-bottom: 14px;
+}
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(74px, 1fr));
+  gap: 16px 8px;
+}
+
+.figure {
+  min-width: 0;
+}
+
+.value {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.footnote {
+  color: var(--dim);
+  font-size: 12px;
+  padding: 20px 0 0;
+}

@@ -14,14 +14,14 @@ import styles from './home.module.css'
 export default function Home() {
   const { season } = useSeason()
 
-  const position = new Map(season.ladder.map((r) => [r.teamId, r.position]))
+  const row = new Map(season.ladder.map((r) => [r.teamId, r]))
   const clubs = [...CLUBS].sort(
-    (a, b) => (position.get(a.teamId) ?? 99) - (position.get(b.teamId) ?? 99),
+    (a, b) => (row.get(a.teamId)?.position ?? 99) - (row.get(b.teamId)?.position ?? 99),
   )
 
   return (
     <>
-      <RefreshHeader title="NRL 2026" />
+      <RefreshHeader title="Oli's NRL Oracle" />
 
       <main className="shell">
         <p className={`label ${styles.caption}`}>
@@ -29,28 +29,43 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          {clubs.map((club) => (
-            <Link
-              key={club.teamId}
-              href={`/team/${club.teamId}`}
-              className={styles.tile}
-              style={{ ['--accent' as string]: club.accent }}
-              data-club={club.themeKey}
-            >
-              <span className={`num ${styles.position}`}>{position.get(club.teamId) ?? '–'}</span>
-              <img
-                className={styles.badge}
-                src={badgeUrl(club.themeKey)}
-                alt=""
-                width={80}
-                height={80}
-                loading="eager"
-              />
-              <span className={styles.name}>{club.name}</span>
-            </Link>
-          ))}
+          {clubs.map((club) => {
+            const r = row.get(club.teamId)
+            return (
+              <Link
+                key={club.teamId}
+                href={`/team/${club.teamId}`}
+                className={styles.tile}
+                style={{ ['--accent' as string]: club.accent }}
+                data-club={club.themeKey}
+              >
+                <span className={`num ${styles.position}`}>{r?.position ?? '–'}</span>
+                <img
+                  className={styles.badge}
+                  src={badgeUrl(club.themeKey)}
+                  alt=""
+                  width={80}
+                  height={80}
+                  loading="eager"
+                />
+                <span className={styles.name}>{club.name}</span>
+
+                {/* Competition points and points difference, the two numbers
+                    that explain the order the tiles are already in. */}
+                <span className={styles.stats}>
+                  <span className={`num ${styles.points}`}>{r?.points ?? '–'}</span>
+                  <span className={styles.unit}>pts</span>
+                  <span className={`num ${styles.diff}`}>{signed(r?.pointsDifference)}</span>
+                </span>
+              </Link>
+            )
+          })}
         </div>
       </main>
     </>
   )
 }
+
+/** Points difference only means anything with its sign attached. */
+const signed = (value: number | undefined) =>
+  value === undefined ? '–' : value > 0 ? `+${value}` : String(value)

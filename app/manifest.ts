@@ -9,7 +9,7 @@ import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'The Oracle — NRL 2026',
+    name: "Oli's NRL Oracle",
     short_name: 'NRL Oracle',
     description: 'Every NRL team, the ladder, every match and every player.',
     start_url: '/',

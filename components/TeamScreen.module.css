@@ -203,6 +203,95 @@
   font-weight: 400;
 }
 
+/* Squad */
+.squad {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.squad li:last-child .player {
+  border-bottom: none;
+}
+
+.jersey {
+  width: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dim);
+  flex: none;
+  text-align: right;
+}
+
+.face {
+  width: 40px;
+  height: 40px;
+  flex: none;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.faceFallback {
+  object-fit: contain;
+  padding: 5px;
+  opacity: 0.55;
+}
+
+.playerBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.playerName {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.playerMeta {
+  display: block;
+  font-size: 11.5px;
+  color: var(--dim);
+  margin-top: 2px;
+}
+
+.playerStat {
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+  flex: none;
+}
+
+.playerStatValue {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.playerStatLabel {
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--dim);
+  margin-right: 6px;
+}
+
+.playerStat > .playerStatLabel:last-child {
+  margin-right: 0;
+}
+
 .empty {
   color: var(--dim);
   font-size: 14px;

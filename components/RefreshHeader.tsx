@@ -10,7 +10,17 @@ import styles from './RefreshHeader.module.css'
 // screen. The status line underneath it is the whole contract with the reader:
 // this is how old the numbers are, and pulling is what makes them new.
 
-export function RefreshHeader({ title, back }: { title: string; back?: boolean }) {
+export function RefreshHeader({
+  title,
+  back,
+  backTo,
+}: {
+  title: string
+  /** Show a back chevron to Home. */
+  back?: boolean
+  /** Show a back chevron to somewhere specific — a player returns to their club. */
+  backTo?: string
+}) {
   const { season, state, refresh } = useSeason()
   const now = useNow()
   const fetching = state.kind === 'fetching'
@@ -19,8 +29,12 @@ export function RefreshHeader({ title, back }: { title: string; back?: boolean }
   return (
     <header className={styles.header}>
       <div className={styles.bar}>
-        {back ? (
-          <Link href="/" className={styles.back} aria-label="Back to all teams">
+        {back || backTo ? (
+          <Link
+            href={backTo ?? '/'}
+            className={styles.back}
+            aria-label={backTo ? 'Back to the team' : 'Back to all teams'}
+          >
             <Chevron />
           </Link>
         ) : null}

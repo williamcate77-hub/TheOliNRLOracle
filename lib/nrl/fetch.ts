@@ -48,9 +48,44 @@ export const fetchDraw = (round?: number) =>
       (round ? `&round=${round}` : ''),
   )
 
+/**
+ * The full match centre payload: both lineups and roughly sixty statistics per
+ * player. Pass the matchCentreUrl the draw returned — never build one by hand.
+ */
+export const fetchMatch = (matchCentreUrl: string) => getJson(`${matchCentreUrl}/data`)
+
 /** Absolutises the mixed relative/absolute URLs the feeds return. */
 export function absolute(path: string | null | undefined): string | null {
   if (!path) return null
   const url = path.startsWith('http') ? path : `https://www.nrl.com${path}`
   return url.replace(/\/$/, '')
+}
+
+/**
+ * Player photos.
+ *
+ * The feeds hand back the image wrapped in nrl.com's own proxy —
+ * `/remote.axd?http://rugbyimages.statsperform.com/…?center=0.3,0.5` — and that
+ * proxy will not serve anyone outside nrl.com: 406 without a browser
+ * User-Agent, 404 with one. The source it wraps answers 200 to anybody, so the
+ * wrapper is unpicked and the source used directly, forced to https.
+ *
+ * The `center` parameter is the proxy's crop hint and means nothing to the
+ * source, so it goes.
+ */
+export function imageUrl(path: string | null | undefined): string | null {
+  if (!path) return null
+
+  const proxy = path.indexOf('remote.axd?')
+  if (proxy === -1) return absolute(path)
+
+  let inner = path.slice(proxy + 'remote.axd?'.length)
+  // The wrapped URL keeps its own extension, then the proxy's parameters are
+  // appended after it. Anything from that second '?' onwards is not ours.
+  const params = inner.indexOf('?')
+  if (params !== -1) inner = inner.slice(0, params)
+
+  if (!inner) return null
+  if (inner.startsWith('http://')) inner = `https://${inner.slice('http://'.length)}`
+  return inner.startsWith('https://') ? inner : null
 }

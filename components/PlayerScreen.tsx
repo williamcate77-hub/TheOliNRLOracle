@@ -97,7 +97,7 @@ export function PlayerScreen({ player: built, club }: { player: PlayerSeason; cl
         </Block>
 
         <p className={styles.footnote}>
-          Season totals, added up from every match played. Height, weight and age are coming next.
+          Season totals, added up from every match {player.firstName} has played this year.
         </p>
       </main>
     </div>

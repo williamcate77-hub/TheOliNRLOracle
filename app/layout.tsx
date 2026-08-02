@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Oswald } from 'next/font/google'
+import { RabbitohsEasterEgg } from '@/components/RabbitohsEasterEgg'
 import { SeasonProvider } from '@/components/SeasonProvider'
 import './globals.css'
 
@@ -35,6 +36,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en-AU" className={`${condensed.variable} ${sans.variable}`}>
       <body>
         <SeasonProvider>{children}</SeasonProvider>
+        {/* At layout level so the sound and the overlay survive the navigation
+            the click usually causes. */}
+        <RabbitohsEasterEgg />
       </body>
     </html>
   )

@@ -82,6 +82,33 @@ button {
   padding: 0 16px 64px;
 }
 
+/* Souths only. Sits above everything and catches nothing. */
+.shades-sky {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.shades {
+  position: absolute;
+  top: -12vh;
+  will-change: transform;
+  animation-name: shades-fall;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shades-fall {
+  from {
+    transform: translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateY(125vh) rotate(var(--spin));
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

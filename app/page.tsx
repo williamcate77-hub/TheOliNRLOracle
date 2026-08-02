@@ -35,6 +35,7 @@ export default function Home() {
               href={`/team/${club.teamId}`}
               className={styles.tile}
               style={{ ['--accent' as string]: club.accent }}
+              data-club={club.themeKey}
             >
               <span className={`num ${styles.position}`}>{position.get(club.teamId) ?? '–'}</span>
               <img

@@ -1,5 +1,6 @@
 import seed from '@/data/season-2026.json'
 import { SEASON, fetchDraw, fetchLadder } from '@/lib/nrl/fetch'
+import { mergeFixtures } from '@/lib/nrl/merge'
 import { fixtureKey, normaliseDraw, normaliseLadder } from '@/lib/nrl/normalise'
 import type { Fixture, Season } from '@/lib/nrl/types'
 
@@ -39,21 +40,35 @@ export async function refreshSeason(): Promise<Season> {
   const fetched = new Map<number, Fixture[]>()
   if (currentFixtures.length) fetched.set(currentRound, currentFixtures)
 
-  // Rounds still worth asking about: anything already stored that has not
-  // finished, anything missing outright, and the round that is next up — which
-  // the default draw response does not include, but the Team screen needs for
-  // its kick-off time and venue.
-  const stale = new Set<number>()
   const byRound = new Map<number, Fixture[]>()
   for (const f of base.fixtures) {
     const list = byRound.get(f.round) ?? []
     list.push(f)
     byRound.set(f.round, list)
   }
-  for (let r = 1; r <= Math.min(currentRound + 1, LAST_ROUND); r++) {
+
+  // Rounds worth asking about, and only those:
+  //
+  //  - Any round nothing is stored for at all. That is the backfill, and it is
+  //    what stops a gap in the store from becoming permanent — a round that was
+  //    never pulled, or was pulled on a day the feed was down, used to be
+  //    invisible forever because the loop below only ever looked as far ahead as
+  //    the next round. Every one of those games is missing off both teams'
+  //    screens until somebody rebuilds the snapshot by hand.
+  //  - Rounds that are stored but have not finished, up to the round after the
+  //    current one. Those are the only stored rounds whose scores can still
+  //    move, and the round that is next up is the one the Team screen needs for
+  //    its kick-off time and venue.
+  //
+  // A future round already sitting in the store is left alone until it comes
+  // into that window, so a complete store still costs the same three requests it
+  // always did: the ladder, this round, and the next.
+  const stale = new Set<number>()
+  for (let r = 1; r <= LAST_ROUND; r++) {
     if (fetched.has(r)) continue
     const stored = byRound.get(r)
-    if (!stored?.length || stored.some((f) => !f.isComplete)) stale.add(r)
+    if (!stored?.length) stale.add(r)
+    else if (r <= currentRound + 1 && stored.some((f) => !f.isComplete)) stale.add(r)
   }
 
   const results = await Promise.allSettled(
@@ -62,22 +77,22 @@ export async function refreshSeason(): Promise<Season> {
   for (const result of results) {
     // A round that will not load is not fatal. Keep whatever was stored for it
     // and let the rest of the refresh through.
-    if (result.status === 'fulfilled' && result.value[1].length) {
-      fetched.set(result.value[0], result.value[1])
+    if (result.status !== 'fulfilled') continue
+    const [asked, fixtures] = result.value
+    // The draw endpoint answers a round it does not recognise with the current
+    // round instead of an error. Filed under the round the payload says it is,
+    // never the round that was asked for, so an answer like that updates the
+    // round it actually describes rather than wiping the one it does not.
+    for (const [round, list] of groupByRound(fixtures)) {
+      if (round === asked || !fetched.has(round)) fetched.set(round, list)
     }
   }
-
-  // Freshly fetched rounds replace what was stored for those rounds; every other
-  // round carries over untouched.
-  const merged = new Map<string, Fixture>()
-  for (const f of base.fixtures) if (!fetched.has(f.round)) merged.set(fixtureKey(f), f)
-  for (const list of fetched.values()) for (const f of list) merged.set(fixtureKey(f), f)
 
   const season: Season = {
     season: SEASON,
     currentRound,
     ladder: ladder.length ? ladder : base.ladder,
-    fixtures: [...merged.values()].sort(byKickOff),
+    fixtures: mergeFixtures(base.fixtures, [...fetched.values()].flat()),
     updatedAt: new Date().toISOString(),
   }
 
@@ -85,8 +100,16 @@ export async function refreshSeason(): Promise<Season> {
   return season
 }
 
-const byKickOff = (a: Fixture, b: Fixture) =>
-  a.round - b.round || (a.kickOff ?? '').localeCompare(b.kickOff ?? '')
+function groupByRound(fixtures: Fixture[]): Map<number, Fixture[]> {
+  const rounds = new Map<number, Fixture[]>()
+  for (const f of fixtures) {
+    if (!f.round) continue
+    const list = rounds.get(f.round) ?? []
+    list.push(f)
+    rounds.set(f.round, list)
+  }
+  return rounds
+}
 
 /**
  * Everything the season is made of except when it was pulled. Two payloads with

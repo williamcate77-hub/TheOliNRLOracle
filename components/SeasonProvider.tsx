@@ -3,14 +3,22 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { usePlayers } from '@/components/PlayersProvider'
 import seed from '@/data/season-2026.json'
+import { mergeSeasons } from '@/lib/nrl/merge'
 import type { Season } from '@/lib/nrl/types'
 
 // Cache first, always.
 //
-// Three layers, in order of preference: whatever the last refresh returned, then
-// localStorage from a previous visit, then the snapshot committed into the build.
-// The screen has real numbers on it before any network call is even considered,
-// and no render in this app ever waits on the NRL.
+// Three layers: whatever the last refresh returned, localStorage from a previous
+// visit, and the snapshot committed into the build. The screen has real numbers
+// on it before any network call is even considered, and no render in this app
+// ever waits on the NRL.
+//
+// They are combined, not ranked. Ranking them by age is what left team screens
+// short of matches: a refresh that ran against a cold instance carrying an older
+// snapshot writes a copy that is newer than the build without holding as many
+// games, and a newer-wins rule then hid every game the build had and the phone
+// did not. Merging means the reader sees the union of everything this app has
+// ever successfully pulled, and a completed match, once seen, stays on screen.
 
 const KEY = 'nrl-oracle:season:v1'
 const SNAPSHOT = seed as Season
@@ -45,10 +53,11 @@ export function SeasonProvider({ children }: { children: React.ReactNode }) {
       const raw = localStorage.getItem(KEY)
       if (raw) {
         const stored = JSON.parse(raw) as Season
-        // Only trust the stored copy if it is actually newer than what shipped
-        // in the build — a deploy can carry a fresher snapshot than the phone.
-        if (stored?.updatedAt && stored.updatedAt > SNAPSHOT.updatedAt && stored.ladder?.length) {
-          setSeason(stored)
+        // The phone's copy and the build's copy are both real, and either can be
+        // the fuller one. Later numbers come from whichever was pulled last; the
+        // matches are the union of the two.
+        if (stored?.updatedAt && Array.isArray(stored.fixtures)) {
+          setSeason(mergeSeasons(SNAPSHOT, stored))
         }
       }
     } catch {
@@ -83,7 +92,11 @@ export function SeasonProvider({ children }: { children: React.ReactNode }) {
         throw new Error(body?.error ?? `Refresh failed (${res.status})`)
       }
 
-      const next = body.season as Season
+      // Merged over what is already on screen rather than swapped in, so a
+      // refresh can only ever add to the season. A cold serverless instance
+      // answers from the snapshot it was built with, which can be thinner than
+      // the copy the reader is already looking at.
+      const next = mergeSeasons(season, body.season as Season)
       const seasonChanged = fingerprint(next) !== fingerprint(season)
 
       // Player totals ride along on the same user action. A failure here is not

@@ -85,7 +85,7 @@ export function TeamScreen({ teamId }: { teamId: number }) {
 
         <Section title="Form">
           <div className={styles.row}>
-            <Stat label="Last five" text={row?.form || '–'} />
+            <Stat label="Last 5" text={row?.form || '–'} />
             <Stat label="Streak" text={row?.streak || '–'} accent={Boolean(row?.streak)} />
             <Stat label="Home" text={row?.homeRecord || '–'} />
             <Stat label="Away" text={row?.awayRecord || '–'} />
@@ -93,10 +93,10 @@ export function TeamScreen({ teamId }: { teamId: number }) {
         </Section>
 
         <Section title="Next match">
+          {/* data-club names the opponent, not the club whose screen this is, so
+              a Souths badge cheers wherever it appears — and the Souths screen
+              itself does not cheer for someone else's result row. */}
           {next ? (
-            {/* data-club names the opponent, not the club whose screen this is,
-                so a Souths badge cheers wherever it appears — and the Souths
-                screen itself does not cheer for someone else's result row. */}
             <div className={styles.next} data-club={opponentOf(next, teamId).themeKey}>
               <img className={styles.nextBadge} src={badgeUrl(opponentOf(next, teamId).themeKey)} alt="" />
               <div className={styles.nextBody}>

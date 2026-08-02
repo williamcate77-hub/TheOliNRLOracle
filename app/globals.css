@@ -1,0 +1,92 @@
+/* Matchday.
+   A stadium scoreboard, not a sports website. Numbers are the loudest thing on
+   every screen; labels are small, uppercase and quiet. No gradients, no glass,
+   no shadows, no decorative icons. One accent per screen, taken from the club. */
+
+:root {
+  --base: #0b1015;
+  --surface: #151c24;
+  --line: #202a34;
+  --text: #f2f5f7;
+  --dim: #7c8a99;
+  --warn: #f0a202;
+  /* Overridden per screen by the club in view. */
+  --accent: #f2f5f7;
+  --accent-deep: #151c24;
+
+  --font-display: var(--font-condensed), 'Arial Narrow', 'Helvetica Neue', sans-serif;
+  --font-body: var(--font-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--base);
+  /* Keeps the notch area and overscroll the same colour as the pitch. */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--base);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: contain;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Every numeral in the app. Tabular so digits never change width when they
+   change value — the tick-over in Phase 4 depends on it, and so does a ladder
+   that does not jitter. */
+.num {
+  font-family: var(--font-display);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: 'tnum' 1;
+  letter-spacing: -0.01em;
+  line-height: 0.9;
+}
+
+/* The other half of the type system: tiny, wide, quiet. */
+.label {
+  font-size: 11px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--dim);
+  font-weight: 500;
+}
+
+.shell {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

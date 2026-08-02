@@ -1,0 +1,93 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--base);
+  border-bottom: 1px solid var(--line);
+  padding: max(8px, env(safe-area-inset-top)) 16px 8px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 720px;
+  margin: 0 auto;
+  min-height: 40px;
+}
+
+.back {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  margin-left: -10px;
+  color: var(--dim);
+  flex: none;
+}
+
+.back:active {
+  color: var(--text);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.refresh {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: none;
+  /* Thumb-sized without looking like a button on a form. */
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.refresh:active {
+  background: var(--surface);
+}
+
+.refresh:disabled {
+  color: var(--dim);
+  cursor: default;
+}
+
+.status {
+  max-width: 720px;
+  margin: 2px auto 0;
+  font-size: 12px;
+  color: var(--dim);
+  min-height: 18px;
+}
+
+.stale {
+  color: var(--warn);
+}
+
+.spinning {
+  animation: spin 900ms linear infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

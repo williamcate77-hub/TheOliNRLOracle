@@ -119,7 +119,12 @@ export function TeamScreen({ teamId }: { teamId: number }) {
           {results.length ? (
             <ol className={styles.timeline}>
               {results.map((f) => (
-                <Result key={`${f.round}-${f.home.teamId}-${f.away.teamId}`} fixture={f} teamId={teamId} />
+                <Result
+                  key={`${f.round}-${f.home.teamId}-${f.away.teamId}`}
+                  fixture={f}
+                  teamId={teamId}
+                  mounted={now > 0}
+                />
               ))}
             </ol>
           ) : (
@@ -136,7 +141,15 @@ export function TeamScreen({ teamId }: { teamId: number }) {
 /* A result reads as a result without reading a word: the winning score is
    heavier and brighter than the losing one, and the outcome letter carries the
    only colour in the row. */
-function Result({ fixture, teamId }: { fixture: Fixture; teamId: number }) {
+function Result({
+  fixture,
+  teamId,
+  mounted,
+}: {
+  fixture: Fixture
+  teamId: number
+  mounted: boolean
+}) {
   const res = outcome(fixture, teamId)
   const them = opponentOf(fixture, teamId)
   const mine = isHome(fixture, teamId) ? fixture.home.score : fixture.away.score
@@ -155,8 +168,11 @@ function Result({ fixture, teamId }: { fixture: Fixture; teamId: number }) {
         <p className={styles.resultOpponent}>
           <span className={styles.versus}>{isHome(fixture, teamId) ? 'v' : '@'}</span> {them.name}
         </p>
+        {/* The date is the reader's local date, so it waits for the clock. */}
         <p className={styles.resultMeta}>
-          {[fixture.roundTitle, shortDate(fixture.kickOff)].filter(Boolean).join(' · ')}
+          {[fixture.roundTitle, mounted ? shortDate(fixture.kickOff) : null]
+            .filter(Boolean)
+            .join(' · ')}
         </p>
       </div>
 

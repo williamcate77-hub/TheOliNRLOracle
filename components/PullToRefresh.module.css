@@ -1,0 +1,15 @@
+.surface {
+  /* Follows the finger exactly, so no transition while the pull is live. */
+  will-change: transform;
+}
+
+/* The slide back after a release is the only motion here. */
+.settling {
+  transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .settling {
+    transition: none;
+  }
+}

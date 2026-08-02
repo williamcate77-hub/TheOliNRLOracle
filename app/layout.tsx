@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Oswald } from 'next/font/google'
 import { PlayersProvider } from '@/components/PlayersProvider'
+import { PullToRefresh } from '@/components/PullToRefresh'
 import { RabbitohsEasterEgg } from '@/components/RabbitohsEasterEgg'
 import { SeasonProvider } from '@/components/SeasonProvider'
 import './globals.css'
@@ -51,7 +52,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Players wraps Season because a season refresh pulls player totals
             along with it. */}
         <PlayersProvider>
-          <SeasonProvider>{children}</SeasonProvider>
+          <SeasonProvider>
+            <PullToRefresh>{children}</PullToRefresh>
+          </SeasonProvider>
         </PlayersProvider>
         {/* At layout level so the sound and the overlay survive the navigation
             the click usually causes. */}

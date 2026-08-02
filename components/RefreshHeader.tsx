@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import { type PullPhase, usePull } from '@/components/PullToRefresh'
 import { useSeason } from '@/components/SeasonProvider'
 import { useNow } from '@/components/useNow'
 import { ago, isStale } from '@/lib/time'
@@ -22,6 +23,7 @@ export function RefreshHeader({
   backTo?: string
 }) {
   const { season, state, refresh } = useSeason()
+  const { phase } = usePull()
   const now = useNow()
   const fetching = state.kind === 'fetching'
   const stale = now > 0 && isStale(season.updatedAt, now)
@@ -54,24 +56,36 @@ export function RefreshHeader({
       </div>
 
       <p
-        className={`${styles.status} ${stale && state.kind === 'idle' ? styles.stale : ''}`}
+        className={`${styles.status} ${
+          stale && state.kind === 'idle' && phase === 'idle' ? styles.stale : ''
+        }`}
         aria-live="polite"
       >
-        {statusLine(state.kind, season.updatedAt, now, stale)}
+        {statusLine(state.kind, phase, season.updatedAt, now, stale)}
       </p>
     </header>
   )
 }
 
+/**
+ * The one line that tells Oliver how old the numbers are and what pulling will
+ * do about it. Every state the brief lists has its own words.
+ */
 function statusLine(
   kind: string,
+  phase: PullPhase,
   updatedAt: string,
   now: number,
   stale: boolean,
 ): string {
+  // A fetch in progress outranks the gesture: the finger has already asked.
+  if (kind === 'fetching') return 'Getting the latest stats'
+
+  // Mid-pull, the line stops reporting and starts instructing.
+  if (phase === 'ready') return 'Release to update'
+  if (phase === 'pulling') return 'Pull down for latest stats'
+
   switch (kind) {
-    case 'fetching':
-      return 'Getting the latest stats'
     case 'success':
       return 'Updated just now'
     case 'nochange':
@@ -81,6 +95,8 @@ function statusLine(
         ? `Could not reach the NRL. Showing stats from ${ago(updatedAt, now)}.`
         : 'Could not reach the NRL. Showing the stats you already had.'
     default:
+      // Before the clock starts there is no honest age to quote, so the line
+      // says the one thing that is true regardless.
       if (now === 0) return 'Pull down for latest stats'
       if (stale) return 'Stats are stale. Pull down to update.'
       return `Updated ${ago(updatedAt, now)}`
